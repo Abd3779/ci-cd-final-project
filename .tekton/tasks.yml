@@ -20,7 +20,7 @@ spec:
       script: #!/usr/bin/env sh
         set -eu
         echo "Removing all files from ${WORKSPACE_SOURCE_PATH} ..."
-        if [ -d "${WORKSPACE_SOURCE_PATH}" ] ; then
+        if [ -d "${WORKSPACE_SOURCE_PATH}" ]; then
           rm -rf "${WORKSPACE_SOURCE_PATH:?}"/*
           rm -rf "${WORKSPACE_SOURCE_PATH}"/.[!.]*
           rm -rf "${WORKSPACE_SOURCE_PATH}"/..?*
